@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Publish journal</title>
+    <script src="/js/angular-min.js"></script>
+    <script src="/js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+</head>
+<body ng-app="BasaApp" ng-controller="CientesAspController">
+
+<div th:if="${message}">
+    <h2 th:text="${message}"/>
+</div>
+
+<div ng-controller="getCategories">
+    <form method="POST" enctype="multipart/form-data" action="/publisher/publish">
+        <table>
+            <tr>
+                <td>File to upload:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="nombre"/></td>
+            </tr>
+            <tr>
+                <td>Category:</td>
+                <td><select name="category">
+                    <option ng-repeat="option in clientes_asp" value="{{option.id}}">{{option.nombreAbreviado}}</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Back" onclick="window.location.href='/publisher/browse'"/>
+                </td>
+                <td><input type="submit" value="Publish"/></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+
+</body>
+</html>
+
+

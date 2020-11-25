@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d9163121-e763-47ad-91ab-4818d8dd84a1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/basa$RUN_PRD.ic" NAME="RUN PRD Coverage Results" MODIFIED="1554737465598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="171" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="BASA_ASF@PRD" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="basa" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Adrian Dominguez &lt;adrianxene06@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="fix/perfomance" />
+      </map>
+    </option>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/feature/reporte_jasper" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/resources/static/js/app.js" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/controller/FiltersController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/static/js/marcar_elementos.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/static/js/cambiar_tipo.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/static/js/hoja_ruta.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/repository/OperacionesRepository.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/static/js/services/reportService.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/static/js/services/requerimientoService.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/static/js/services/operacionService.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RequerimientoBussiness.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/static/js/controllers/filtroReqCtrl.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/repository/RelacionOpElRepository.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/repository/HojaRutaRepository.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/repository/TipoRequerimientoRepository.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/controller/SiguienteOperacionController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/controller/ReportesController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/static/js/form_print.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/controller/OperacionesController.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectId" id="1Tq8GYQ4T6p686R5u7I1Lx3YC2B" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlserver" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="SearchEverywhereHistoryKey" value="sigu&#9;PSI&#9;JAVA://com.aconcaguasf.basa.digitalize.controller.SiguienteOperacionController&#10;.proper&#9;FILE&#9;file://C:/Users/administrador/Desktop/BASA ASF GIT/basa-asf/src/main/resources/application.properties&#10;-dev&#9;FILE&#9;file://C:/Users/administrador/Desktop/BASA ASF GIT/basa-asf/src/main/resources/application-dev.properties&#10;relaco&#9;FILE&#9;file://C:/Users/administrador/Desktop/BASA ASF GIT/basa-asf/src/main/java/com/aconcaguasf/basa/digitalize/model/RelacionOpEl.java&#10;po&#9;FILE&#9;file://C:/Users/administrador/Desktop/BASA ASF GIT/basa-asf/pom.xml&#10;pom&#9;FILE&#9;file://C:/Users/administrador/Desktop/BASA ASF GIT/basa-asf/pom.xml&#10;operaciones&#9;FILE&#9;file://C:/Users/administrador/Desktop/BASA ASF GIT/basa-asf/src/main/java/com/aconcaguasf/basa/digitalize/controller/OperacionesController.java&#10;app&#9;FILE&#9;file://C:/Users/administrador/Desktop/BASA ASF GIT/basa-asf/src/main/resources/application.properties&#10;cam&#9;FILE&#9;file://C:/Users/administrador/Desktop/BASA ASF GIT/basa-asf/src/main/resources/static/js/cambiar_tipo.js&#10;hoja&#9;FILE&#9;file://C:/Users/administrador/Desktop/BASA ASF GIT/basa-asf/src/main/resources/static/js/services/hojaRutaService.js&#10;serv&#9;FILE&#9;file://C:/Users/administrador/Desktop/BASA ASF GIT/basa-asf/src/main/resources/static/js/services/hojaRutaService.js&#10;MARCA&#9;FILE&#9;file://C:/Users/administrador/Desktop/BASA ASF GIT/basa-asf/src/main/resources/static/js/marcar_elementos.js" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559736117792" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/img" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15332772" />
+    <property name="project.structure.side.proportion" value="0.20414202" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="Docker" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\administrador\Desktop\BASA ASF GIT\basa-asf\src\main\resources\static\img" />
+      <recent name="C:\Users\administrador\Desktop\BASA ASF GIT\basa-asf" />
+      <recent name="C:\Users\administrador\Desktop\BASA ASF GIT\basa-asf\src\main\resources\static\jasper" />
+      <recent name="C:\Users\administrador\Desktop\BASA ASF GIT\basa-asf\src\main\resources" />
+      <recent name="C:\Users\administrador\Desktop\BASA ASF GIT\basa-asf\src\main" />
+    </key>
+    <key name="OPEN_URL_DIALOG">
+      <recent name="http://222.15.19.119/dev-team-basa/produccionAspBasaIntellij1.git" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\administrador\Desktop\BASA ASF GIT\basa-asf\src\main\resources\static\img" />
+      <recent name="C:\Users\administrador\Desktop\BASA ASF GIT\basa-asf\src\main\resources" />
+      <recent name="C:\Users\administrador\Desktop\BASA ASF GIT\basa-asf\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.aconcaguasf.basa.digitalize.repository" />
+      <recent name="com.aconcaguasf.basa.digitalize.dto" />
+      <recent name="com.aconcaguasf.basa.digitalize.model" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.aconcaguasf.basa.digitalize.model" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="i =20" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.RUN PRD">
+    <configuration name="js debugger" type="JavascriptDebugType" uri="http://localhost:8090">
+      <method v="2" />
+    </configuration>
+    <configuration name="RUN DEV" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="basa" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.aconcaguasf.basa.digitalize.Application" />
+      <option name="ACTIVE_PROFILES" value="dev" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RUN PRD" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="basa" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.aconcaguasf.basa.digitalize.Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="JavaScript Debug.js debugger" />
+      <item itemvalue="Spring Boot.RUN DEV" />
+      <item itemvalue="Spring Boot.RUN PRD" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.Dockerfile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.16460587" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_PROPERTIES" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9163121-e763-47ad-91ab-4818d8dd84a1" name="Default Changelist" comment="" />
+      <created>1536772377751</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536772377751</updated>
+      <workItem from="1536772380850" duration="11244000" />
+      <workItem from="1538057284736" duration="4603000" />
+      <workItem from="1538668474394" duration="5419000" />
+      <workItem from="1539697483676" duration="594000" />
+      <workItem from="1539776037439" duration="1945000" />
+      <workItem from="1539947981766" duration="2008000" />
+      <workItem from="1540314701032" duration="2761000" />
+      <workItem from="1541010361086" duration="317000" />
+      <workItem from="1542029646363" duration="3525000" />
+      <workItem from="1542138734235" duration="50054000" />
+      <workItem from="1542916535769" duration="1338000" />
+      <workItem from="1542976800102" duration="2227000" />
+      <workItem from="1543244776465" duration="10971000" />
+      <workItem from="1543498553373" duration="2738000" />
+      <workItem from="1543603679784" duration="271000" />
+      <workItem from="1544030899625" duration="1209000" />
+      <workItem from="1544208004811" duration="11725000" />
+      <workItem from="1544641019914" duration="2532000" />
+      <workItem from="1545304447079" duration="13707000" />
+      <workItem from="1545825217986" duration="38658000" />
+      <workItem from="1546539003851" duration="12728000" />
+      <workItem from="1547813181033" duration="1300000" />
+      <workItem from="1547823830761" duration="4476000" />
+      <workItem from="1548781236658" duration="2421000" />
+      <workItem from="1548789977928" duration="870000" />
+      <workItem from="1549020424955" duration="2977000" />
+      <workItem from="1549899059012" duration="880000" />
+      <workItem from="1550519447758" duration="598000" />
+      <workItem from="1550754918779" duration="4818000" />
+      <workItem from="1550860405630" duration="1718000" />
+      <workItem from="1551187260502" duration="10214000" />
+      <workItem from="1551208843735" duration="627000" />
+      <workItem from="1551271508795" duration="13784000" />
+      <workItem from="1551367983123" duration="9227000" />
+      <workItem from="1551887558703" duration="2473000" />
+      <workItem from="1552395607178" duration="38721000" />
+      <workItem from="1552932548731" duration="61382000" />
+      <workItem from="1554044726102" duration="7594000" />
+      <workItem from="1555004062418" duration="28761000" />
+      <workItem from="1555341078359" duration="33595000" />
+      <workItem from="1555938986760" duration="2402000" />
+      <workItem from="1555954892278" duration="24325000" />
+      <workItem from="1556890329274" duration="704000" />
+      <workItem from="1557145494298" duration="18801000" />
+      <workItem from="1557430498975" duration="125476000" />
+      <workItem from="1559580296219" duration="24755000" />
+      <workItem from="1560426989117" duration="7315000" />
+      <workItem from="1560886246403" duration="10127000" />
+      <workItem from="1561741223125" duration="37000" />
+      <workItem from="1561742634892" duration="6231000" />
+      <workItem from="1562851381920" duration="22898000" />
+      <workItem from="1563385186765" duration="11122000" />
+      <workItem from="1563801847324" duration="26733000" />
+      <workItem from="1564147503676" duration="76231000" />
+      <workItem from="1565271901497" duration="70000" />
+      <workItem from="1565272798483" duration="10849000" />
+      <workItem from="1565615604811" duration="11024000" />
+      <workItem from="1565712426847" duration="26535000" />
+      <workItem from="1565957427280" duration="8517000" />
+      <workItem from="1566473402876" duration="2159000" />
+      <workItem from="1566581006884" duration="1544000" />
+      <workItem from="1566992071298" duration="41675000" />
+      <workItem from="1568229905421" duration="19903000" />
+      <workItem from="1568724674331" duration="4237000" />
+      <workItem from="1569330429931" duration="5695000" />
+      <workItem from="1569843156193" duration="23252000" />
+      <workItem from="1570196308017" duration="6874000" />
+      <workItem from="1571062922452" duration="8587000" />
+      <workItem from="1574176180040" duration="5204000" />
+      <workItem from="1574186980946" duration="6000" />
+      <workItem from="1574426778332" duration="6800000" />
+      <workItem from="1577713836630" duration="9330000" />
+      <workItem from="1578317038846" duration="13962000" />
+      <workItem from="1578398868260" duration="2447000" />
+      <workItem from="1578594536008" duration="14000" />
+      <workItem from="1578596171453" duration="27000" />
+      <workItem from="1578596260786" duration="3245000" />
+      <workItem from="1578917923981" duration="592000" />
+      <workItem from="1579707619034" duration="2572000" />
+      <workItem from="1579893719705" duration="274000" />
+      <workItem from="1580213862511" duration="587000" />
+      <workItem from="1580412612250" duration="2699000" />
+      <workItem from="1583847066777" duration="12000" />
+      <workItem from="1584023961640" duration="930000" />
+      <workItem from="1589483221828" duration="54000" />
+      <workItem from="1589545982023" duration="935000" />
+      <workItem from="1589549604690" duration="2355000" />
+      <workItem from="1591184095518" duration="626000" />
+      <workItem from="1591191444850" duration="1659000" />
+      <workItem from="1591198741843" duration="2450000" />
+      <workItem from="1592320089894" duration="2087000" />
+      <workItem from="1593015045604" duration="16808000" />
+      <workItem from="1593107788737" duration="29388000" />
+      <workItem from="1593537340935" duration="11661000" />
+      <workItem from="1593617829241" duration="5068000" />
+      <workItem from="1593716964075" duration="23853000" />
+      <workItem from="1594219614269" duration="2242000" />
+      <workItem from="1594821079964" duration="5653000" />
+      <workItem from="1595596105777" duration="149000" />
+      <workItem from="1595601988862" duration="2623000" />
+      <workItem from="1596031078616" duration="1321000" />
+      <workItem from="1596547219570" duration="45655000" />
+      <workItem from="1597860366951" duration="1524000" />
+      <workItem from="1597862910098" duration="17553000" />
+      <workItem from="1598269535076" duration="1337000" />
+      <workItem from="1598295226586" duration="567000" />
+      <workItem from="1599067974863" duration="5983000" />
+      <workItem from="1599147607145" duration="989000" />
+      <workItem from="1599497721477" duration="735000" />
+      <workItem from="1600107295904" duration="1454000" />
+      <workItem from="1605019086779" duration="2558000" />
+    </task>
+    <task id="LOCAL-00001" summary="Finalizado OK">
+      <created>1542043047457</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542043047457</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Arreglo controlar elemento en Hoja de Ruta">
+      <created>1542225839182</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1542225839183</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Arreglo controlar elemento en Hoja de Ruta">
+      <created>1542225899886</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1542225899886</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Arreglo controlar elemento en Hoja de Ruta">
+      <created>1542373614435</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1542373614435</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fix de elementos en requerimientos">
+      <created>1542809027951</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1542809027951</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fix del Filtro de requerimientos. Muestra solo los que estan asignados con el clienteAsp Basa (1)">
+      <created>1545847523551</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1545847523551</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fix de Verificar Digitales , se comenta el codigo y se cambia el Mensaje.">
+      <created>1547826181052</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1547826181052</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Feature tipoTrabajo">
+      <created>1551287365296</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1551287365296</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Feature tipoTrabajo">
+      <created>1552652301600</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1552652301601</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Feature tipoTrabajo">
+      <created>1553085354765</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1553085354765</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Feature tipoTrabajo">
+      <created>1553256864901</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1553256864901</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Feature tipoTrabajo">
+      <created>1553259207318</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1553259207318</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Feature tipoTrabajo">
+      <created>1553263115249</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1553263115249</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Feature tipoTrabajo">
+      <created>1559317523422</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1559317523422</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Feature tipoTrabajo">
+      <created>1559317663635</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1559317663636</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Perfomance">
+      <created>1560427094430</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1560427094430</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Perfomance">
+      <created>1560427242137</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1560427242137</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Perfomance">
+      <created>1564407277294</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1564407277295</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Perfomance">
+      <created>1567170900347</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1567170900347</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Perfomance">
+      <created>1567175720059</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1567175720059</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finalizado OK" />
+    <MESSAGE value="Arreglo controlar elemento en Hoja de Ruta" />
+    <MESSAGE value="Fix de elementos en requerimientos" />
+    <MESSAGE value="Fix del Filtro de requerimientos. Muestra solo los que estan asignados con el clienteAsp Basa (1)" />
+    <MESSAGE value="Fix de Verificar Digitales , se comenta el codigo y se cambia el Mensaje." />
+    <MESSAGE value="Feature tipoTrabajo" />
+    <MESSAGE value="Perfomance" />
+    <option name="LAST_COMMIT_MESSAGE" value="Perfomance" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="23" key="#Docker" timestamp="1598016668582">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="23" key="#Docker/0.0.1366.728@0.0.1366.728" timestamp="1598016668582" />
+    <state x="275" y="23" key="#Inspections" timestamp="1596727222754">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="23" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1596727222754" />
+    <state x="155" y="16" key="#Path_mapping" timestamp="1597863615661">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="155" y="16" key="#Path_mapping/0.0.1366.728@0.0.1366.728" timestamp="1597863615661" />
+    <state x="275" y="23" key="#Port_bindings" timestamp="1598016744635">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="23" key="#Port_bindings/0.0.1366.728@0.0.1366.728" timestamp="1598016744635" />
+    <state x="275" y="23" key="#Project_Structure" timestamp="1598012299511">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="23" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1598012299511" />
+    <state x="275" y="23" key="#Pull_Image" timestamp="1597866658228">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="23" key="#Pull_Image/0.0.1366.728@0.0.1366.728" timestamp="1597866658228" />
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597866641156">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1597866641156" />
+    <state x="437" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598013219196">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="437" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1598013219196" />
+    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser" timestamp="1596809498837">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1596809498837" />
+    <state x="409" y="64" key="FileChooserDialogImpl" timestamp="1598010627220">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="409" y="64" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598010627220" />
+    <state width="1080" height="366" key="GridCell.Tab.0.bottom" timestamp="1605022555068">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1080" height="366" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605022555068" />
+    <state width="1080" height="366" key="GridCell.Tab.0.center" timestamp="1605022555068">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1080" height="366" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605022555068" />
+    <state width="1080" height="366" key="GridCell.Tab.0.left" timestamp="1605022555068">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1080" height="366" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605022555068" />
+    <state width="1080" height="366" key="GridCell.Tab.0.right" timestamp="1605022555068">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1080" height="366" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605022555068" />
+    <state width="1080" height="366" key="GridCell.Tab.1.bottom" timestamp="1605022555068">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1080" height="366" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605022555068" />
+    <state width="1080" height="366" key="GridCell.Tab.1.center" timestamp="1605022555068">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1080" height="366" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1605022555068" />
+    <state width="1080" height="366" key="GridCell.Tab.1.left" timestamp="1605022555068">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1080" height="366" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1605022555068" />
+    <state width="1080" height="366" key="GridCell.Tab.1.right" timestamp="1605022555068">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1080" height="366" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1605022555068" />
+    <state width="1080" height="281" key="GridCell.Tab.2.bottom" timestamp="1599071232447">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1080" height="281" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599071232447" />
+    <state width="1080" height="281" key="GridCell.Tab.2.center" timestamp="1599071232447">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1080" height="281" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1599071232447" />
+    <state width="1080" height="281" key="GridCell.Tab.2.left" timestamp="1599071232447">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1080" height="281" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1599071232447" />
+    <state width="1080" height="281" key="GridCell.Tab.2.right" timestamp="1599071232447">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1080" height="281" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1599071232447" />
+    <state x="64" y="0" key="SettingsEditor" timestamp="1598010633646">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="64" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1598010633646" />
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599072988012">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1599072988012" />
+    <state x="348" y="97" width="908" height="536" key="find.popup" timestamp="1605021097479">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="348" y="97" width="908" height="536" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1605021097479" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1596651166728">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1596651166728" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/controller/ReportesController.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/controller/ReportesController.java</url>
+          <line>141</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="245" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="246" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="247" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="248" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="250" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="251" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="252" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="253" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="254" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="255" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="256" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="257" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="258" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="259" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="260" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="261" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="263" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>100</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="265" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="266" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="267" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="268" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>124</line>
+          <option name="timeStamp" value="269" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>126</line>
+          <option name="timeStamp" value="270" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>127</line>
+          <option name="timeStamp" value="271" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="272" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>138</line>
+          <option name="timeStamp" value="275" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>140</line>
+          <option name="timeStamp" value="276" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>142</line>
+          <option name="timeStamp" value="277" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>141</line>
+          <option name="timeStamp" value="278" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="283" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="284" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="285" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/controller/RemitoController.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="288" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/controller/RemitoController.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="289" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/controller/RemitoController.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="290" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/controller/RemitoController.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="291" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/controller/RemitoController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="292" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/controller/RemitoController.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="293" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/repository/ReqHojaRutaRepository.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/controller/HojaRutaController.java</url>
+          <line>197</line>
+          <option name="timeStamp" value="297" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="316" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/controller/SiguienteOperacionController.java</url>
+          <line>786</line>
+          <option name="timeStamp" value="346" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/static/js/app.js</url>
+          <line>960</line>
+          <option name="timeStamp" value="238" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/static/js/app.js</url>
+          <line>948</line>
+          <option name="timeStamp" value="239" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/static/js/app.js</url>
+          <line>949</line>
+          <option name="timeStamp" value="240" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/static/js/controlar_elementos.js</url>
+          <line>170</line>
+          <option name="timeStamp" value="308" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/static/js/controlar_elementos.js</url>
+          <line>173</line>
+          <option name="timeStamp" value="309" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/static/js/controlar_elementos.js</url>
+          <line>176</line>
+          <option name="timeStamp" value="310" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/static/js/controlar_elementos.js</url>
+          <line>174</line>
+          <option name="timeStamp" value="313" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/static/js/controlar_elementos.js</url>
+          <line>175</line>
+          <option name="timeStamp" value="314" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/static/js/app.js</url>
+          <line>1491</line>
+          <option name="timeStamp" value="322" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/static/js/app.js</url>
+          <line>1493</line>
+          <option name="timeStamp" value="323" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/static/js/app.js</url>
+          <line>1494</line>
+          <option name="timeStamp" value="326" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/static/js/app.js</url>
+          <line>1492</line>
+          <option name="timeStamp" value="327" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/static/js/app.js</url>
+          <line>1528</line>
+          <option name="timeStamp" value="340" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aconcaguasf/basa/digitalize/bussiness/RemitoBussiness.java</url>
+          <line>54</line>
+          <properties class="com.aconcaguasf.basa.digitalize.bussiness.RemitoBussiness" method="getRemitoProceso">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="243" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="operacion" language="JAVA" />
+        <watch expression="jasperReport" />
+        <watch expression="jasperReport" language="JAVA" />
+        <watch expression="requerimiento" />
+        <watch expression="lecturaPendPlantaGlobal" />
+        <watch expression="lectura" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/basa$RUN_PRD.ic" NAME="RUN PRD Coverage Results" MODIFIED="1568635860346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

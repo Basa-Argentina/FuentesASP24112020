@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="basa:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>basa</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="basa-1.6.0.war">
+      <element id="artifact" artifact-name="basa:war exploded" />
+    </root>
+  </artifact>
+</component>

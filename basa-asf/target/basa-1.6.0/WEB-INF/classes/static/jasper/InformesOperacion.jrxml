@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reporteImpresionOperacionPru" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d0e35b59-9905-46b9-a424-f6e9e3254df1">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="481"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="sql150"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="343"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="647"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="Column header_1" forecolor="#000000" fontName="Arial" fontSize="12" isBold="true">
+		<box topPadding="2" leftPadding="2">
+			<topPen lineWidth="1.0"/>
+			<leftPen lineWidth="1.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<parameter name="numeroRequerimiento" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[SELECT        numero, cantidad, razonSocial, fechaAlta, tipo_requerimiento, fechaEntrega, Solicitante, estado, observaciones, legajo_numero1, legajo_texto1, legajo_fecha1, Codigo1, Posicion1, Codigo2, Posicion2, ubicacionProvisoria_1,
+                         ubicacionProvisoria_2, horasArchivista, kilometros, fletes, cImagenes, loteReferencia,sucursal,provincia
+FROM            rptReporteImpresionOperacion
+WHERE        (numero =  $P{numeroRequerimiento} )]]>
+	</queryString>
+	<field name="numero" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="numero"/>
+	</field>
+	<field name="cantidad" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="cantidad"/>
+	</field>
+	<field name="razonSocial" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="razonSocial"/>
+	</field>
+	<field name="fechaAlta" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="fechaAlta"/>
+	</field>
+	<field name="tipo_requerimiento" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="tipo_requerimiento"/>
+	</field>
+	<field name="fechaEntrega" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="fechaEntrega"/>
+	</field>
+	<field name="Solicitante" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Solicitante"/>
+	</field>
+	<field name="estado" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="estado"/>
+	</field>
+	<field name="observaciones" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="observaciones"/>
+	</field>
+	<field name="legajo_numero1" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="legajo_numero1"/>
+	</field>
+	<field name="legajo_texto1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="legajo_texto1"/>
+	</field>
+	<field name="legajo_fecha1" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="legajo_fecha1"/>
+	</field>
+	<field name="Codigo1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Codigo1"/>
+	</field>
+	<field name="Posicion1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Posicion1"/>
+	</field>
+	<field name="Codigo2" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Codigo2"/>
+	</field>
+	<field name="Posicion2" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Posicion2"/>
+	</field>
+	<field name="ubicacionProvisoria_1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="ubicacionProvisoria_1"/>
+	</field>
+	<field name="ubicacionProvisoria_2" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="ubicacionProvisoria_2"/>
+	</field>
+	<field name="horasArchivista" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="horasArchivista"/>
+	</field>
+	<field name="kilometros" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="kilometros"/>
+	</field>
+	<field name="fletes" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="fletes"/>
+	</field>
+	<field name="cImagenes" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="cImagenes"/>
+	</field>
+	<field name="loteReferencia" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="loteReferencia"/>
+	</field>
+	<field name="sucursal" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="sucursal"/>
+	</field>
+	<field name="provincia" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="provincia"/>
+	</field>
+	<variable name="cImagenes1" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{cImagenes}]]></variableExpression>
+	</variable>
+	<variable name="cImagenes2" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[$F{cImagenes}]]></variableExpression>
+	</variable>
+	<variable name="cImagenes3" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{cImagenes}]]></variableExpression>
+	</variable>
+	<variable name="cImagenes4" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{cImagenes}]]></variableExpression>
+	</variable>
+	<variable name="cImagenes5" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{cImagenes}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="253" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header_1" mode="Opaque" x="0" y="35" width="157" height="20" forecolor="#FFFFFF" backcolor="#666666" uuid="53089994-b52b-426f-ae24-3dfebc6ba177">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" N° Requerimiento: " + $F{numero}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Column header_1" mode="Opaque" x="0" y="58" width="157" height="20" forecolor="#FFFFFF" backcolor="#666666" uuid="87c37689-030f-46e1-894e-d08fde85cfb3"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textFieldExpression><![CDATA[" Cantidad Consultas: "  + $F{cantidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Column header_1" mode="Opaque" x="166" y="35" width="626" height="20" forecolor="#FFFFFF" backcolor="#666666" uuid="ff947f24-7fc6-4644-8c4c-016d252a02b2"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textFieldExpression><![CDATA[" Razon Social: " + $F{razonSocial}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Column header_1" mode="Opaque" x="166" y="58" width="626" height="20" forecolor="#FFFFFF" backcolor="#666666" uuid="859a644d-61c7-4e77-aa94-5698146baf01">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textFieldExpression><![CDATA[" Tipo Requerimiento: " + $F{tipo_requerimiento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="166" y="128" width="626" height="20" forecolor="#FFFFFF" backcolor="#666666" uuid="73e892b4-62e1-49a7-b9c8-7c93a8776457"/>
+				<box topPadding="2" leftPadding="2">
+					<pen lineWidth="0.75" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" Sector: " + $F{sucursal} + "  Provincia: " +$F{provincia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Column header_1" mode="Opaque" x="0" y="82" width="157" height="20" forecolor="#FFFFFF" backcolor="#666666" uuid="aff6688f-1bbb-4d58-85aa-d6cc2876c0ba">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" Fecha Alta: " + $F{fechaAlta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="0" y="105" width="157" height="20" forecolor="#FFFFFF" backcolor="#666666" uuid="91a5d96f-baac-4da7-9799-0c70f26fedaa"/>
+				<box topPadding="2" leftPadding="2">
+					<pen lineWidth="0.75" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" Fecha Entrega: " + $F{fechaEntrega}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="0" y="128" width="157" height="20" forecolor="#FFFFFF" backcolor="#666666" uuid="bf79d6d0-3a03-4486-8116-6c4d1896f059"/>
+				<box topPadding="2" leftPadding="2">
+					<pen lineWidth="0.75" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" Estado: "  + $F{estado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="0" y="155" width="790" height="91" uuid="ad5f7be4-411c-4356-92fe-5bf8a8220a6c"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Observaciones: " + $F{observaciones}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="166" y="82" width="626" height="20" forecolor="#FFFFFF" backcolor="#666666" uuid="20f86a8e-97d1-4847-b2ca-a8276a9ec6c1"/>
+				<box topPadding="2" leftPadding="2">
+					<pen lineWidth="0.75" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" Solicitante: " + $F{Solicitante}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="8" y="0" width="786" height="34" uuid="f674e96f-bab9-441d-8eed-220e9a686714"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black" size="22" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipo_requerimiento}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="166" y="105" width="626" height="20" forecolor="#FFFFFF" backcolor="#666666" uuid="1bb78c17-0219-4eb5-9740-cf24abd1c328">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box topPadding="2" leftPadding="2">
+					<pen lineWidth="0.75" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $V{cImagenes5} == null ) ? "Cant. Imagenes: 0" : "Cant. Imagenes: " +  $V{cImagenes5}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="4" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="106" y="4" width="135" height="13" uuid="c3bc5c0a-9bd8-4dbb-bdf6-a144a777ca49"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{Codigo2}==null)?"":$F{Codigo2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="106" height="13" forecolor="#FFFFFF" backcolor="#666666" uuid="7afef33e-f984-4ad8-aa84-0a3e8a12998b"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Codigo1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="4" width="208" height="11" uuid="7f4c8e33-5d08-4011-9114-42d69b5a9063"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{ubicacionProvisoria_1}==null)? ($F{ubicacionProvisoria_2}==null )?"": $F{ubicacionProvisoria_2}   : $F{ubicacionProvisoria_1} + ' ' + $F{ubicacionProvisoria_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="551" y="4" width="100" height="10" uuid="871b7144-67b3-455b-a768-09af9a76ed6c"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{loteReferencia}==null)? "":"Lote:" + $F{loteReferencia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="4" width="122" height="14" uuid="5f7da8a8-dd72-43f3-baa7-928b27d86be4"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{Posicion1}==null)?
+      ($F{Posicion2}==null)? "" :
+        $F{Posicion2}
+  :$F{Posicion1}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="3" y="22" width="735" height="3" uuid="42345b5f-5e54-4cfa-94ae-7711de8dcc3d"/>
+			</line>
+			<textField>
+				<reportElement x="460" y="4" width="100" height="12" uuid="c9896750-0eef-446d-bac6-a7f89e261455"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{cImagenes} == null ) ? "" : "Cant. Imagenes:" + $F{cImagenes}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="2" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="13" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+		</band>
+	</summary>
+</jasperReport>

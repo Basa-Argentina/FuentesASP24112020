@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="subReporteRemitoDetalles" columnCount="5" printOrder="Horizontal" pageWidth="400" pageHeight="595" columnWidth="80" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4af0f1e2-d290-46fe-b452-1e62c6811ce7">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="sql150"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="parametroRemitoId" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT   CONVERT(numeric, SUBSTRING(elementos.codigo, 3, 12)) AS codigo, remitosDetalle.remito_id
+FROM            elementos INNER JOIN
+                         remitosDetalle ON elementos.id = remitosDetalle.elemento_id
+WHERE        remitosDetalle.remito_id = $P{parametroRemitoId}
+ORDER BY elementos.codigo]]>
+	</queryString>
+	<field name="codigo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="codigo"/>
+	</field>
+	<field name="remito_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="remito_id"/>
+	</field>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="16" y="0" width="64" height="20" uuid="52bca4aa-f853-4eac-98fe-eeded812a278"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{codigo}]]></textFieldExpression>
+			</textField>
+			<ellipse>
+				<reportElement x="2" y="6" width="10" height="10" uuid="ef9b3c27-1368-4716-ad40-7af4207577f8"/>
+			</ellipse>
+		</band>
+	</detail>
+	<summary>
+		<band height="19">
+			<textField evaluationTime="Report">
+				<reportElement stretchType="ElementGroupHeight" x="3" y="0" width="120" height="15" uuid="21aa43a0-a311-4e4b-b75d-f48b0ed266d9"/>
+				<textElement>
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Cantidad : "+  $V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

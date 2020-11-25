@@ -1,0 +1,43 @@
+<md-dialog aria-label="" ng-cloak="true">
+    <form>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Buscar HdR por número de requerimiento</h2>
+                <span flex=""></span>
+                <md-button  aria-label="Close dialog" class="md-icon-button"  ng-click="closeModal()">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content class="content-dialgo-hdr-req">
+            <div class="content" layout="column">
+                <div layout-gt-sm="row" class="layout-head-hdr-req" layout-align="center center">
+                    <div layout-gt-sm="row">
+                        <md-input-container>
+                            <label>N° Req.</label>
+                            <input ng-model="num_requerimiento" type="number" step="1"
+                                   ng-pattern="/^[0-9]*$/"
+                                   style="max-width: 120px"/>
+                        </md-input-container>
+                    </div>
+                    <div layout-gt-sm="row">
+                        <md-tooltip md-direction="'right'">Buscar</md-tooltip>
+                        <md-button  aria-label="Buscar" class="md-fab md-mini md-primary" ng-click="getListHdr()" ng-disabled="disableButtonSerachHdr"> <span class="glyphicon glyphicon-search"></span></md-button>
+                    </div>
+                </div>
+                <div layout-gt-sm="row">
+                    <md-progress-linear md-mode="indeterminate" ng-show="showProgressSearch" class="md-warn md-hue-1"></md-progress-linear>
+                </div>
+                <div layout-gt-sm="row" class="layout-body-hdr-req" ng-show="mostrarListaHdR">
+                    <md-list flex="">
+                        <md-list-item ng-repeat="numHdr in listNumHdr" layout-align="center center" ng-click="closeModal(numHdr.numero)">
+                            <div class="md-list-item-text" layout="column" layout-align="center center">
+                                {{numHdr.numero}}
+                            </div>
+                        </md-list-item>
+                    </md-list>
+                </div>
+            </div>
+        </md-dialog-content>
+    </form>
+</md-dialog>

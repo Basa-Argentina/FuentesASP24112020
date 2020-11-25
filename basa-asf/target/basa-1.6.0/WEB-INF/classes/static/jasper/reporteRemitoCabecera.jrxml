@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reporteRemitoCabecera" pageWidth="420" pageHeight="595" columnWidth="396" leftMargin="10" rightMargin="14" topMargin="14" bottomMargin="14" uuid="e26cbc61-9cfd-409d-9b10-fab4ccd8189a">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="sql150.xml"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="476"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="510"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<parameter name="parametroRemitoId" class="java.lang.Integer"/>
+	<parameter name="copia" class="java.lang.String">
+		<defaultValueExpression><![CDATA["DUPLICADO"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT        id, numeroSinPrefijo, cantidadElementos, codigoBarra, letraComprobante, Remito, tipoRequerimiento, cliente, domicilio, requerimiento, fechaSolicitud, Solicita, observaciones, contenedor, contenido, codigo, 
+                         empresaAdministra
+FROM            View_Remito_Cabecera
+WHERE        id = $P{parametroRemitoId}]]>
+	</queryString>
+	<field name="id" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+	</field>
+	<field name="numeroSinPrefijo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="numeroSinPrefijo"/>
+	</field>
+	<field name="cantidadElementos" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="cantidadElementos"/>
+	</field>
+	<field name="codigoBarra" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="codigoBarra"/>
+	</field>
+	<field name="letraComprobante" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="letraComprobante"/>
+	</field>
+	<field name="Remito" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Remito"/>
+	</field>
+	<field name="tipoRequerimiento" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="tipoRequerimiento"/>
+	</field>
+	<field name="cliente" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="cliente"/>
+	</field>
+	<field name="domicilio" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="domicilio"/>
+	</field>
+	<field name="requerimiento" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="requerimiento"/>
+	</field>
+	<field name="fechaSolicitud" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="fechaSolicitud"/>
+	</field>
+	<field name="Solicita" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Solicita"/>
+	</field>
+	<field name="observaciones" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="observaciones"/>
+	</field>
+	<field name="contenedor" class="java.lang.Short">
+		<property name="com.jaspersoft.studio.field.label" value="contenedor"/>
+	</field>
+	<field name="contenido" class="java.lang.Short">
+		<property name="com.jaspersoft.studio.field.label" value="contenido"/>
+	</field>
+	<field name="codigo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="codigo"/>
+	</field>
+	<field name="empresaAdministra" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="empresaAdministra"/>
+	</field>
+	<pageHeader>
+		<band height="164">
+			<property name="com.jaspersoft.studio.layout"/>
+			<rectangle radius="5">
+				<reportElement x="0" y="-2" width="391" height="71" uuid="2215c4ec-39b5-4d07-abf6-5ac5da74a3fd"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="5">
+				<reportElement x="0" y="72" width="391" height="20" uuid="63864857-31da-4e9f-8b76-5c379199bd5c"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="5">
+				<reportElement x="0" y="95" width="391" height="43" uuid="c5f2e742-9b49-4773-a1bc-8d0bb55632ee"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</rectangle>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="16" y="5" width="53" height="60" uuid="9411963c-312f-4847-bf57-c8b7ec544db4"/>
+				<imageExpression><![CDATA["static\\img\\LogoBasa.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="75" y="3" width="105" height="49" uuid="1ea03875-41e6-40b2-a328-7f1b2dc5b5f8"/>
+				<textElement>
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dr. Valentin Alsina 2338  Godoy Cruz - Mendoza  CP: (M5503HJX)
+Tel: 4322047 - 4321296 ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="180" y="20" width="31" height="31" uuid="f1e4fa51-9180-49e0-b3c3-eef9e14b3755"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="189" y="23" width="20" height="31" uuid="bcb675cf-c222-4bb9-9092-ba81b8b00539"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[R]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="75" y="46" width="149" height="19" uuid="6fdd1553-e241-44a6-b219-10347e9bb181"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="EAN13" drawText="true" checksumRequired="true" rotation="None">
+					<jr:codeExpression><![CDATA[$F{codigoBarra}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<staticText>
+				<reportElement x="222" y="1" width="164" height="49" uuid="e0453e90-f61e-4f0e-8e24-ed10cbfaf824"/>
+				<textElement>
+					<font fontName="Arial" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IVA RESPONSABLE INSCRIPTO
+CUIT : 30-69467417-4
+INGRESOS BRUTOS : 0427935
+ESTABLECIMIENTO Nº : 04 - 0427935 - 00
+SEDE TIMBRADO : 01-  Sede Central
+FECHA INICIO ACTIVIDAD : 01/11/1997]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="220" y="51" width="186" height="18" uuid="81afd776-d8ea-41af-8300-fa663668d6bb"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Remito N°: " + $F{Remito}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="6" y="75" width="230" height="16" uuid="330778a4-96ab-4994-b602-9c92207eba83"/>
+				<textElement>
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Tipo: " + $F{tipoRequerimiento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement stretchType="RelativeToTallestObject" x="304" y="75" width="96" height="18" uuid="bb366a5a-7a70-410a-9371-3b19a1bf0970"/>
+				<textElement>
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Fecha: " + new SimpleDateFormat("dd/MM/yyyy").format (new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="6" y="96" width="370" height="15" uuid="7b9cb76b-07c5-45f2-be9f-77cb3e2ba8bf"/>
+				<textElement>
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Cliente: " + $F{cliente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="6" y="109" width="370" height="15" uuid="00a17c7b-e784-4990-8416-043abc39d0fb"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Domicilio: " + $F{domicilio}]]></textFieldExpression>
+			</textField>
+			<rectangle radius="3">
+				<reportElement x="-1" y="141" width="391" height="21" uuid="648d931f-4dc0-4be8-a5be-fde6132ebba7"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="8" y="144" width="112" height="15" uuid="7e783de6-235c-4003-9a38-eb9200139a55"/>
+				<textElement>
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Descripción]]></text>
+			</staticText>
+			<textField>
+				<reportElement stretchType="ElementGroupHeight" x="280" y="143" width="132" height="15" uuid="f86711c7-30ba-427c-a8dd-94d7913c1676"/>
+				<textElement>
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Requerimiento: " + $F{requerimiento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="6" y="122" width="370" height="15" uuid="07af5643-6511-48f1-8a4e-5dbe7c0a8f8e"/>
+				<textElement>
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Solicita: " + $F{Solicita}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="3" width="16" height="62" uuid="8956dec1-35d9-408b-bee0-58a8609cf6f3"/>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{copia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="143" width="120" height="16" uuid="b892f47c-8867-4ed3-a042-734ceceb9b4c"/>
+				<textElement>
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Pagína: " + $V{PAGE_NUMBER}+ " de " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="259" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<subreport>
+				<reportElement stretchType="ContainerHeight" x="8" y="0" width="376" height="259" forecolor="#E861A0" backcolor="#FFFFFF" uuid="fe5a9dee-0f30-4e6b-845e-55de05a7b2bc"/>
+				<subreportParameter name="parametroRemitoId">
+					<subreportParameterExpression><![CDATA[$P{parametroRemitoId}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$F{codigo}.equals("01")
+								? "static\\jasper\\subReporteCajasVaciasDetalle.jasper"
+						 		: $F{contenedor} == 1
+						 			? "static\\jasper\\subReporteRemitoContenedor.jasper"
+						 			:  "static\\jasper\\subReporteRemitoContenido.jasper"]]></subreportExpression>
+			</subreport>
+			<line>
+				<reportElement x="388" y="0" width="1" height="259" uuid="3580f8f6-958f-44d2-858f-69ce103ade59"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="0" width="1" height="259" uuid="d498a1d8-6c27-470d-9ea7-36d0bbe8a6f0"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="14" y="10" width="254" height="30" uuid="f8f6101a-1de4-4409-ae79-b17c002b4ddb"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contenedor} == null? "Cantidad: " +  $F{cantidadElementos} :""]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="144" splitType="Stretch">
+			<rectangle radius="5">
+				<reportElement x="0" y="6" width="391" height="79" uuid="689e429c-9487-4976-a55c-cc6618c905d6"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="5">
+				<reportElement x="-1" y="89" width="391" height="50" uuid="aaf87f17-4c5a-410d-9f7b-396332a3a720"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="20" y="120" width="91" height="14" uuid="0025d839-2259-4abb-ad6e-e40a04c1d2c2"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Firma y Aclaración]]></text>
+			</staticText>
+			<line>
+				<reportElement x="16" y="118" width="93" height="1" uuid="08a86bf8-9345-4b09-b9fc-57ed2b04f52c"/>
+			</line>
+			<staticText>
+				<reportElement x="143" y="120" width="57" height="14" uuid="c815f5e2-945b-4245-97c4-a72ca41c01b8"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="149" y="96" width="2" height="23" uuid="609fe0aa-784d-4a9e-b65a-7f8eca459a06"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[/ ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="155" y="118" width="13" height="1" uuid="e2c9192b-fbb3-46a0-ae6f-1e4b2c89e953"/>
+			</line>
+			<line>
+				<reportElement x="178" y="118" width="13" height="1" uuid="a5136f3d-7549-4c5b-bdae-696f0c16a579"/>
+			</line>
+			<staticText>
+				<reportElement x="175" y="96" width="2" height="23" uuid="29c41957-ef74-4248-89e8-d523fd32ebc7"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[/ ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="130" y="118" width="13" height="1" uuid="8ae7788b-993d-41ec-b101-6b4ae9d154e5"/>
+			</line>
+			<staticText>
+				<reportElement x="230" y="120" width="38" height="14" uuid="19670408-587b-486c-840e-68c42e899bae"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hora]]></text>
+			</staticText>
+			<line>
+				<reportElement x="223" y="119" width="13" height="1" uuid="9d345288-33f0-48d7-9a32-5c1107cb7f7f"/>
+			</line>
+			<line>
+				<reportElement x="250" y="118" width="13" height="1" uuid="4d4a8a8b-7261-4da1-93f1-36e551fa2905"/>
+			</line>
+			<staticText>
+				<reportElement x="244" y="101" width="5" height="24" uuid="3e83a686-7a8f-400a-a2a8-3584356dd7f3"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="122" width="66" height="14" uuid="ed180d1b-83e2-4d1f-8634-f27a04816fec"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Por Basa]]></text>
+			</staticText>
+			<line>
+				<reportElement x="304" y="119" width="73" height="1" uuid="452e944f-eded-48b4-a05d-666fd620a9e0"/>
+			</line>
+			<line>
+				<reportElement x="0" y="0" width="388" height="1" uuid="1186cbb9-1075-45ea-a32c-94c08cb9faf9"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="8" y="20" width="383" height="65" isRemoveLineWhenBlank="true" uuid="8d362176-db4a-4b6c-a886-1686abc8e077"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Observaciones: " + $F{observaciones}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="126" y="6" width="100" height="30" uuid="c31db018-1f92-4248-af1b-0165b9854815"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Datos de la entrega]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="121" y="52" width="100" height="30" uuid="5d9cc8f4-18d8-4c20-9697-de8e83d6ce09"/>
+				<textFieldExpression><![CDATA[$F{Solicita}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

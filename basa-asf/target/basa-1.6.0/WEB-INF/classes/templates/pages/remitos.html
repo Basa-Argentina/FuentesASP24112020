@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+>
+<form name="searchForm">
+    <div sec:authorize="isAuthenticated()" ng-controller="remitoCtrl as ctrl">
+        <alert type="{{ctrl.alertType}}" close="showAlert = false" ng-show="showAlert" ng-model="alertBox">
+            {{ctrl.alertMessage}}
+        </alert>
+
+        <div ng-cloak="true">
+            <div layout-gt-sm="row" style="background: #f1ffff !important;" >
+                <div layout-gt-sm="row" layout-md-padding="" layout-align="start center" flex="100">
+                    <div class="md-padding" layout-gt-sm="row">
+                        <md-input-container>
+                            <label>Código de Remito</label>
+                            <input ng-model="filtro.remito" type="text" step="1" ng-pattern="/^[0-9]*$/" ng-required="" style="min-width: 10px"/> <br/>
+                        </md-input-container>
+                        <div>
+                            <md-tooltip md-direction="'right'">Buscar</md-tooltip>
+                            <md-button  aria-label="Buscar" class="md-fab md-mini md-primary" ng-click="buttonClick('findRemito')" ng-disabled="disableButtonSearch"> <span class="glyphicon glyphicon-search"></span></md-button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div layout-gt-sm="row" ng-show="showProgress">
+                <md-progress-linear md-mode="indeterminate" class="md-warn md-hue-1"></md-progress-linear>
+            </div>
+            <div layout-gt-sm="column" class="" ng-show="showRemito">
+                <div layout-gt-sm="column">
+                    <md-subheader class="md-primary">Remito</md-subheader>
+                    <md-list flex="">
+                        <md-list-item class="md-list-item-text" layout="row" layout-align="start center">
+                            <div flex="100" class="md-list-item-text" layout="row">
+                                <div flex="10"><b>Número</b></div>
+                                <div flex="20"><b>Fecha Entrega</b></div>
+                                <div flex="10"><b>Turno</b></div>
+                                <div flex="5"> <b>Cant.</b></div>
+                                <div flex="10"><b>Requerimiento</b></div>
+                                <div flex="15"><b>Tipo</b></div>
+                                <div flex="30"><b>Cliente</b></div>
+                            </div>
+                        </md-list-item>
+                        <md-list-item class="md-list-item-text" layout="row" layout-align="start center">
+                            <div flex="100" class="md-list-item-text" layout="row" layout-align="start center" >
+                                <div flex="10"> {{remitoProceso.numero_remito}} </div>
+                                <!--div flex="15"> {{remitoProceso.fecha_entrega_remito}} </div-->
+                                <div flex="20"> <md-datepicker ng-model="fechaRemito"  md-placeholder="Fecha entrega"  ng-disabled="disableFechaRemito" ></md-datepicker> </div>
+                                <dvi flex="10">
+                                    <md-input-container>
+                                        <md-select ng-model="remitoProceso.turno" required="" aria-label="Turno" ng-disabled="disableTurnoRemitoProceso">
+                                            <md-option ng-repeat="turno in turnos" value="{{turno.codigo}}">
+                                                {{turno.descripcion}}
+                                            </md-option>
+                                        </md-select>
+                                    </md-input-container>
+                                </dvi>
+                                <div flex="5">  {{remitoProceso.cantidad_elementos}} </div>
+                                <div flex="10"> {{remitoProceso.numero_requerimiento}} </div>
+                                <div flex="15"> {{remitoProceso.desc_tipo_requerimiento}} </div>
+                                <div flex="30"> {{remitoProceso.desc_cliente}} </div>
+                            </div>
+                        </md-list-item>
+                        <md-list-item class="md-list-item-text" layout="row" layout-align="end center">
+                            <div flex="100" class="md-list-item-text" layout="row" layout-align="end center">
+                                <md-button class="btn btn-success" ng-click="buttonClick('process')" ng-hide="hideButtonProcesar">
+                                    {{ 'Procesar' }}
+                                </md-button>
+                                <md-button class="btn btn-default" ng-click="buttonClick('clear')">
+                                    {{ 'Cancelar' }}
+                                </md-button>
+                            </div>
+                        </md-list-item>
+                    </md-list>
+                    <div layout="row" layout-align="end start">
+
+                    </div>
+                </div>
+                <md-subheader class="md-primary">Detalles</md-subheader>
+                <md-tabs md-dynamic-height="" md-border-bottom="">
+                    <md-tab label="Elementos Remito">
+                        <md-content>
+                            <div layout-gt-sm="row">
+                                <div flex="50" layout="column">
+                                    <md-subheader>Devolución de cliente {{(retornarCodigoCarga('dc') !== 0) ? ' | Código de Carga: ' + retornarCodigoCarga('dc') : ''}}</md-subheader>
+                                    <md-list flex="100">
+                                        <md-list-item  layout="row" layout-align="start center">
+                                            <div flex="20" class="md-list-item-text" layout="row" layout-align="start center"> <b>Código Elemento</b> </div>
+                                            <!--div flex="" class="md-list-item-text" layout="row" layout-align="start center"> <b>Grupo</b> </div-->
+                                        </md-list-item>
+                                        <md-list-item layout="row" layout-align="start center" ng-repeat="elemento in remitoProceso.elementos_agrupados | dc">
+                                            <div flex="20" class="md-list-item-text" layout="row" layout-align="start center"> {{elemento.codigo_elemento}} </div>
+                                            <!--div flex="" class="md-list-item-text" layout="row" layout-align="start center"> {{elemento.grupo}} </div-->
+                                        </md-list-item>
+                                        <md-list-item layout="row" layout-align="start center">
+                                            <div flex="80">&nbsp;</div>
+                                            <div flex="20" class="md-list-item-text" layout="row" layout-align="end center"> Total: {{ (remitoProceso.elementos_agrupados | dc).length }} </div>
+                                        </md-list-item>
+                                    </md-list>
+                                </div>
+                                <md-divider></md-divider>
+                                <div flex="50" layout="column">
+                                    <md-subheader>En Guarda y Custodia {{(retornarCodigoCarga('gc') !== 0) ? ' | Código de Carga: ' + retornarCodigoCarga('gc') : ''}}</md-subheader>
+                                    <md-list flex="100">
+                                        <md-list-item  layout="row" layout-align="start center">
+                                            <div flex="50" class="md-list-item-text" layout="row" layout-align="start center"> <b>Código Elemento</b> </div>
+                                            <!--div flex="50" class="md-list-item-text" layout="row" layout-align="start center"> <b>Grupo</b> </div-->
+                                        </md-list-item>
+                                        <md-list-item layout="row" layout-align="start center" ng-repeat="elemento in remitoProceso.elementos_agrupados | gc">
+                                            <div flex="50" class="md-list-item-text" layout="row" layout-align="start center"> {{elemento.codigo_elemento}} </div>
+                                            <!--div flex="50" class="md-list-item-text" layout="row" layout-align="start center"> {{elemento.grupo}} </div-->
+                                        </md-list-item>
+                                        <md-list-item layout="row" layout-align="start center">
+                                            <div flex="80">&nbsp;</div>
+                                            <div flex="20" class="md-list-item-text" layout="row" layout-align="end center"> Total: {{ (remitoProceso.elementos_agrupados | gc).length }} </div>
+                                        </md-list-item>
+                                    </md-list>
+                                </div>
+                            </div>
+                        </md-content>
+                    </md-tab>
+
+                    <md-tab label="Elementos Lecturas">
+                        <md-content>
+                            <div layout-gt-sm="row">
+                                <div flex="50" layout="column">
+                                    <md-subheader>Lecturas Faltantes Camión</md-subheader>
+                                    <md-list flex="100">
+                                        <md-list-item layout="row" layout-align="start center">
+                                            <div flex="50" class="md-list-item-text" layout="row" layout-align="start center"> <b>Código Elemento</b> </div>
+                                        </md-list-item>
+                                        <md-list-item layout="row" layout-align="start center" ng-repeat="elemento in remitoProceso.elementos_faltantes_camion">
+                                            <div flex="50" class="md-list-item-text" layout="row" layout-align="start center"> {{elemento}} </div>
+                                        </md-list-item>
+                                    </md-list>
+                                </div>
+                                <md-divider></md-divider>
+                                <div flex="50" layout="column">
+                                    <md-subheader>Lecturas Faltantes Planta</md-subheader>
+                                    <md-list flex="100">
+                                        <md-list-item  layout="row" layout-align="start center">
+                                            <div flex="50" class="md-list-item-text" layout="row" layout-align="start center"> <b>Código Elemento</b> </div>
+                                        </md-list-item>
+                                        <md-list-item layout="row" layout-align="start center" ng-repeat="elemento in remitoProceso.elementos_faltantes_planta">
+                                            <div flex="50" class="md-list-item-text" layout="row" layout-align="start center"> {{elemento}} </div>
+                                        </md-list-item>
+                                    </md-list>
+                                </div>
+                                <md-divider></md-divider>
+                                <div flex="50" layout="column">
+                                    <md-subheader>Lecturas Sobrantes Camión</md-subheader>
+                                    <md-list flex="100">
+                                        <md-list-item  layout="row" layout-align="start center">
+                                            <div flex="50" class="md-list-item-text" layout="row" layout-align="start center"> <b>Código Elemento</b> </div>
+                                        </md-list-item>
+                                        <md-list-item layout="row" layout-align="start center" ng-repeat="elemento in remitoProceso.elementos_sobrantes_camion">
+                                            <div flex="50" class="md-list-item-text" layout="row" layout-align="start center"> {{elemento}} </div>
+                                        </md-list-item>
+                                    </md-list>
+                                </div>
+                            </div>
+                        </md-content>
+                    </md-tab>
+                </md-tabs>
+            </div>
+        </div>
+    </div>
+</form>
+</html>

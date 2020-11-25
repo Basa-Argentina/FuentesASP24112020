@@ -1,0 +1,26 @@
+<md-dialog aria-label="" style="width: 35vw; height: 35vh" id="dialog">
+    <div ng-controller="controlarRemitosCtrl" id="marcarElementos">
+
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <div class="md-toolbar-tools-title"><h2>{{dialog.title}}</h2></div>
+            <div class="md-toolbar-tools-subtitle"><h3>{{dialog.subtitle}}</h3></div>
+            <span flex=""></span>
+            <md-button class="md-icon-button" ng-click="cancel()">
+                <md-icon aria-label="Close dialog"></md-icon>
+            </md-button>
+        </div>
+        <md-divider></md-divider>
+    </md-toolbar>
+
+    <md-dialog-content>
+        <div layout-gt-sm="row" layout="column" style="align-items: center; clear: left; float: left; position: relative; left: 30%; height: 5vh;">
+            <h3> Procesando Remitos </h3>
+        </div>
+        <div layout-gt-sm="row" layout="column" style="align-items: center; clear: left; float: left; position: relative; left: 43%; height: 20vh;">
+            <md-progress-circular ng-disabled="!vm.activated" md-diameter="90"></md-progress-circular>
+        </div>
+
+    </md-dialog-content>
+    </div>
+</md-dialog>

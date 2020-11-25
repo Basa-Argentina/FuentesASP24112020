@@ -1,0 +1,10 @@
+<md-dialog aria-label="Dialog" ng-cloak="">
+    <md-dialog-content>
+        <div class="md-dialog-content" style="background: #d06565; color: white">
+            <p>Los siguientes elementos poseen legajos, por lo tanto no puede continuar con el requerimiento</p>
+            <ul>
+                <li ng-repeat="contenedor in elementosContenedores">{{contenedor}}</li>
+            </ul>
+        </div>
+    </md-dialog-content>
+</md-dialog>

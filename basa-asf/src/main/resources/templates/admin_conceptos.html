@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+>
+<form name="searchForm">
+    <div sec:authorize="isAuthenticated()" ng-controller="AdminConceptosCtrl as ctrl">
+        <alert type="{{ctrl.alertType}}"
+               close="showAlert = false"
+               ng-show="showAlert"
+               ng-model="alertBox">{{ctrl.alertMessage}}</alert>
+        <div ng-cloak="true">
+            <div layout-gt-sm="row" style="background: #f1ffff !important;">
+                <div layout-gt-sm="row" style="width: 95%;float: left">
+                    <div class="md-padding">
+                        <md-input-container style="max-width: 150px">
+                            <label>Sucursal</label>
+                            <md-select ng-model="selectedSucursal"
+                                       ng-change="aplicarFiltro('sucursal')">
+                                <md-optgroup label="sucursal">
+                                    <md-option ng-value="sucursal.id" ng-repeat="sucursal in sucursales">
+                                        {{sucursal.descripcion}}
+                                    </md-option>
+                                </md-optgroup>
+                            </md-select>
+                        </md-input-container>
+                    </div>
+                    <div class="md-padding">
+                        <md-input-container  style="max-width: 150px; min-width: 150px">
+                            <md-tooltip md-direction="\'right\'">{{tipoRequerimientos[selectedTipoRequerimiento-1].descripcion}}</md-tooltip>
+                            <label>Concepto</label>
+                            <md-select ng-model="selectedTipoRequerimiento"
+                                       ng-change="aplicarFiltro()">
+                                <md-optgroup label="tipoRequerimiento">
+                                    <md-option ng-value="0">
+                                        Ver todos
+                                    </md-option>
+                                    <md-option ng-value="tipoRequerimiento.value" ng-repeat="tipoRequerimiento in tipoRequerimientos">
+                                        {{tipoRequerimiento.descripcion}}
+                                    </md-option>
+                                </md-optgroup>
+                            </md-select>
+                        </md-input-container>
+                    </div>
+<!--                    <div class="md-padding">
+                    <md-input-container style="max-width: 150px" >
+                        <md-tooltip md-direction="\'right\'">{{selectedOperacion}}</md-tooltip>
+                        <label>Operacion</label>
+                        <md-select ng-model="selectedOperacion"
+                                   ng-change="aplicarFiltro()">
+                            <md-optgroup label="operacion">
+                                <md-option ng-value="0">
+                                    Ver todos
+                                </md-option>
+                                <md-option ng-value="operacion.descripcion" ng-repeat="operacion in operaciones">
+                                    {{operacion.descripcion}}
+                                </md-option>
+                            </md-optgroup>
+                        </md-select>
+                    </md-input-container>
+                    </div>-->
+                    <div layout="column" ng-cloa="true" class="md-padding">
+                        <md-autocomplete flex="true"
+                                         md-input-name="autocompleteField"
+                                         md-input-minlength="2"
+                                         md-input-maxlength="60"
+                                         md-no-cache="ctrl.noCache"
+                                         md-selected-item="selectedCliente"
+                                         md-selected-item-change="aplicarFiltro()"
+                                         md-search-text="ctrl.searchText"
+                                         md-items="item in ctrl.querySearch(ctrl.searchText)"
+                                         md-item-text="item.display"
+                                         md-require-match="true"
+                                         md-floating-label="Cliente"
+                                         md-dropdown-items="10"
+                                         ng-trim="false"
+                                         md-autocomplete-snap="width">
+                            <md-item-template>
+                                <span md-highlight-text="ctrl.searchText">{{item.display}}</span>
+                            </md-item-template>
+                            <md-not-found>
+                                No se encuentran coincidencias.
+                            </md-not-found>
+                            <div ng-messages="searchForm.autocompleteField.$error"
+                                 ng-if="searchForm.autocompleteField.$touched">
+                                <div ng-message="md-require-match">Cliente no válido</div>
+                                <div ng-message="minlength">Datos insuficientes</div>
+                            </div>
+                        </md-autocomplete>
+                    </div>
+                    <div>
+                        <md-input-container class="md-block" >
+                            <md-switch class="md-primary" name="sinHDR" ng-model="mostrarHabilitados" ng-change="aplicarFiltro()">
+                                Habilitados
+                            </md-switch>
+                        </md-input-container>
+                    </div>
+                    <div>
+                        <md-input-container class="md-block" >
+                            <md-switch class="md-primary" name="mostrarFinalizados" ng-model="mostrarFinalizados"
+                                       ng-change="aplicarFiltro()">
+                                Req.Finalizados
+                            </md-switch>
+                            <div ng-hide="hideHdRSelector" class="sample-show-hide">
+                            <md-select ng-model="selectedHdR"
+                                       ng-change="agregarHdR()"
+                                       aria-label="selectHdR">
+                                <md-optgroup label="hojaDeRuta">
+                                    <md-option ng-value="hojaDeRuta" ng-repeat="hojaDeRuta in hojasDeRuta">
+                                        {{hojaDeRuta}}
+                                    </md-option>
+                                </md-optgroup>
+                            </md-select>
+                            </div>
+                        </md-input-container>
+                    </div>
+                    <div class="md-padding" >
+                        <md-datepicker
+                                ng-model="fechaDesde"
+                                md-placeholder="Desde"
+                                md-open-on-focus="true"
+                                ng-change="aplicarFiltro()">
+                        </md-datepicker>
+                    </div>
+                    <div class="md-padding" >
+                        <md-datepicker
+                                ng-model="fechaHasta"
+                                md-placeholder="Hasta"
+                                md-open-on-focus="true"
+                                ng-change="aplicarFiltro()">
+                        </md-datepicker>
+                    </div>
+                </div>
+            </div>
+            <div layout-gt-sm="row" ui-i18n="es">
+                <!--<div ui-i18n="es">-->
+                <div id="conceptosGrid" ui-grid="gridOptions" ui-grid-grouping="true"
+                     ui-grid-edit="false" ui-grid-selection="true" ui-grid-exporter="true"
+                     ui-grid-move-columns="true" ui-grid-save-state="true" ui-grid-resize-columns="true"
+                     ui-grid-auto-fit-columns="true" ui-grid-pagination="true" class="grid" ng-context-menu="menuOptions">
+                </div>
+
+
+                <!-- <button id="save" type="button" class="btn btn-success" ng-click="saveState()">Save</button>
+                 <button id="restore" type="button" class="btn btn-success" ng-click="restoreState()">Restore
+                 </button>-->
+                <!--</div>-->
+            </div>
+            <div layout-gt-sm="row">
+                <md-progress-linear md-mode="indeterminate" class="md-warn md-hue-1" ng-show="showProgress"></md-progress-linear>
+            </div>
+        </div>
+    </div>
+</form>
+<canvas id="barcodeTarget" width="150" height="150" ng-show="false"></canvas>
+<canvas id="mapTarget" width="512" height="512" ng-show="false"></canvas>
+<!--<div id="barcodeTarget" class="barcodeTarget" ng-show="false"></div>-->
+
+</html>
+

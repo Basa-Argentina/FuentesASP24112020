@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="subReporteCajasVaciasDetalle" pageWidth="421" pageHeight="100" columnWidth="421" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="68bb174c-2d92-4d08-a137-589a64b8d4ce">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="sql150.xml"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="parametroRemitoId" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[SELECT        remitosDetalle.remito_id, MAX(elementos.codigo) - 110000000000 AS CajaUltima, MIN(elementos.codigo) - 110000000000 AS CajaInicial ,  COUNT(*) AS Cantidad
+FROM            remitosDetalle INNER JOIN
+                         elementos ON remitosDetalle.elemento_id = elementos.id
+GROUP BY remitosDetalle.remito_id
+HAVING        remitosDetalle.remito_id =$P{parametroRemitoId}]]>
+	</queryString>
+	<field name="remito_id" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="remito_id"/>
+	</field>
+	<field name="CajaUltima" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="CajaUltima"/>
+	</field>
+	<field name="CajaInicial" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="CajaInicial"/>
+	</field>
+	<field name="Cantidad" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="Cantidad"/>
+	</field>
+	<detail>
+		<band height="61" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="10" y="0" width="380" height="21" uuid="2996fae1-bd98-4939-9d96-2ff632127ba5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Cajas vacias desde " + $F{CajaInicial} + " Hasta " + $F{CajaUltima}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="26" width="310" height="24" uuid="df22c639-53c4-45dc-b093-a176c69a55d8"/>
+				<textElement>
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Cantidad: " + $F{Cantidad}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

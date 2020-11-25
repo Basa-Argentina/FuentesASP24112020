@@ -1,0 +1,48 @@
+<md-dialog aria-label="" style="width: 30vw;" ng-controller="asingarTareaCtrl">
+
+    <form ng-cloak="">
+
+            <md-toolbar >
+                <div class="md-toolbar-tools">
+                    <div class="md-toolbar-tools-title"><h2>{{dialog.title}}</h2></div>
+                    <div class="md-toolbar-tools-subtitle"><h3>{{dialog.subtitle}}</h3></div>
+                </div>
+            </md-toolbar>
+
+
+            <md-content>
+                <alert type="{{alertType}}"
+                       close="showAlert = false"
+                       ng-show="showAlert"
+                       ng-model="alertBox">{{alertMessage}}
+                </alert>
+                <div ng-show="showProgress">
+                <div layout-gt-sm="row" layout="column" style="align-items: center; clear: left; float: left; position: relative; left: 15vh; height: 5vh;">
+                    <h3> Procesando Asignación </h3>
+                </div>
+                <div layout-gt-sm="row" layout="column" style="align-items: center; clear: left; float: left; position: relative; left: 27vh; height: 15vh;">
+                    <md-progress-circular ng-disabled="!vm.activated" md-diameter="90"></md-progress-circular>
+                </div>
+                </div>
+                <md-list flex="" ng-show="showUsers">
+                    <md-list-item class="md-1-line" ng-repeat="item in userList" ng-click="asignarUsuario()">
+                        <!--<img ng-src="{{item.face}}?{{$index}}" class="md-avatar" alt="{{item.usuariosPlanta.personasFisicas.nombreCompleto}}"/>-->
+                        <div class="md-list-item-text" layout="column">
+                            <h4>{{ item.user_id }} - {{ item.usuariosPlanta.personasFisicas.nombreCompleto.toUpperCase() }}</h4>
+                        </div>
+                    </md-list-item>
+                    <md-divider></md-divider>
+                </md-list>
+            </md-content>
+
+
+            <md-dialog-actions layout="row" >
+                <md-button class="btn-info" ng-click="answer('cancelar')" ng-hide="showProgress">
+                    Cancelar
+                </md-button>
+            </md-dialog-actions>
+
+    </form>
+
+
+</md-dialog>

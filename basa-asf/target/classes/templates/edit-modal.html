@@ -1,0 +1,16 @@
+<div style="{{ctrl.schema.style}}" ng-mouseover="ctrl.autoResize()">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <div class="md-toolbar-tools-title"><h2>{{ctrl.schema.title}}</h2></div>
+            <div class="md-toolbar-tools-subtitle"><h3>{{ctrl.schema.subtitle}}</h3></div>
+        </div>
+    </md-toolbar>
+    <div class="modal-body">
+        <alert type="{{ctrl.alertType}}"
+               close="ctrl.showAlert = false"
+               ng-show="ctrl.showAlert"
+               ng-model="alertBox">{{ctrl.alertMessage}}</alert>
+        <form sf-schema="ctrl.schema" sf-form="ctrl.form" sf-model="ctrl.entity" ng-submit="ctrl.answer('aceptar',dynamicForm,ctrl.entity)" name="dynamicForm" id="dynamicForm">
+        </form>
+    </div>
+</div>

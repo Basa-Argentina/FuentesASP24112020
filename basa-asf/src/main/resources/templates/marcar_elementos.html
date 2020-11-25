@@ -1,0 +1,88 @@
+<md-dialog aria-label="" style="width: 65vw;" ng-controller="marcarElementosCtrl" id="marcarElementos">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <div class="md-toolbar-tools-title"><h2>{{dialog.title}}</h2></div>
+            <div class="md-toolbar-tools-subtitle"><h3>{{dialog.subtitle}}</h3></div>
+            <span flex=""></span>
+            <md-button class="md-icon-button" ng-click="cancel()">
+                <md-icon aria-label="Close dialog"></md-icon>
+            </md-button>
+        </div>
+        <md-divider></md-divider>
+        <md-progress-linear md-mode="indeterminate" class="md-warn md-hue-1" ng-show="showProgress"></md-progress-linear>
+    </md-toolbar>
+
+    <md-dialog-content>
+        <div layout-gt-sm="row" layout="column">
+            <alerta/>
+            <div flex-gt-sm="50" flex="">
+                <md-toolbar layout="row" class="md-hue-3">
+                    <div class="md-toolbar-tools">
+                        <span class="md-toolbar-tools-title middle">{{dialog.columnOne.title}}</span>
+                        <span class="md-toolbar-tools-subtitle middle">{{dialog.columnOne.subtitle}}</span>
+                    </div>
+                </md-toolbar>
+                <md-content>
+                    <md-list flex="">
+                        <md-list-item class="md-1-line to-mark" ng-repeat="item in elementosList" ng-click="">
+                            <!--<img ng-src="{{item.face}}?{{$index}}" class="md-avatar" alt="{{item.usuariosPlanta.personasFisicas.nombreCompleto}}"/>-->
+                            <div class="md-list-item-text" layout="column">
+                                <h4 draggable="false">{{ item.id }} </h4>
+                            </div>
+                        </md-list-item>
+                        <md-divider></md-divider>
+                    </md-list>
+                </md-content>
+            </div>
+            <md-divider></md-divider>
+            <div flex-gt-sm="50" flex="">
+                <md-toolbar layout="row" class="md-hue-3">
+                    <div class="md-toolbar-tools">
+                        <span class="md-toolbar-tools-title middle">{{dialog.columnTwo.title}}</span>
+                        <span class="md-toolbar-tools-subtitle middle">{{dialog.columnTwo.subtitle}}</span>
+                    </div>
+                </md-toolbar>
+                <md-content>
+                    <md-list flex="" >
+                        <md-list-item class="md-1-line marked" ng-repeat="itemLeido in leidosList">
+                            <div class="md-list-item-text" layout="column">
+                                <h4 ng-class="elementosList.hasOwnProperty(itemLeido.elemento) ? 'element-marked' : 'element-marked-new'">{{itemLeido.elemento}}</h4>
+                            </div>
+                        </md-list-item>
+                        <md-divider></md-divider>
+                    </md-list>
+                </md-content>
+            </div>
+        </div>
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+        <div flex-gt-sm="50" flex="" class="modal-footer-action">
+            <md-input-container>
+                <label>Elemento</label>
+                <input ng-model="elementoLeido"
+                       type="text"
+                       md-autofocus=""
+                       ng-keypress="agregarElemento($event)"
+                       ng-keyup="limpiarElemento($event)"
+                       ng-paste="$event.preventDefault()"
+                       ng-trim="true"
+                       drop-disable=""/>
+            </md-input-container>
+        </div>
+        <div flex-gt-sm="50" flex="" style="text-align: right !important;">
+            <md-button class="btn-danger" ng-click="operacionSiguiente()" ng-hide="disableAceptar">
+                Aceptar
+            </md-button>
+            <md-button class="btn-danger" ng-click="operacionSiguiente()" ng-hide="disableDividir">
+                Dividir
+            </md-button>
+            <md-button class="btn-danger" ng-click="operacionSiguiente(true)" ng-hide="disableControlar">
+                NO controlar
+            </md-button>
+            <md-button class="btn-info" ng-click="answer('cancelar')">
+                Cerrar
+            </md-button>
+        </div>
+    </md-dialog-actions>
+</md-dialog>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+>
+<form name="searchForm" ng-controller="filtroReqCtrl as rqctrl">
+    <div>
+        <div layout-gt-sm="row" class="layout-head-req">
+            <div layout-gt-sm="row" layout-align="start start" class="layout-head-req-filtro" ng-cloak="true">
+                <div  >
+                    <md-input-container  style="max-width: 150px; min-width: 150px">
+                        <label>Tipo Requerimiento</label>
+                        <md-select ng-model="filtro.selectedTipoRequerimiento">
+                            <md-optgroup label="tipoRequerimiento">
+                                <md-option ng-value="0">
+                                    Ver todos
+                                </md-option>
+                                <md-option ng-value="tipoRequerimiento.id" ng-repeat="tipoRequerimiento in filtroTiposRequerimiento">
+                                    {{tipoRequerimiento.descripcion}}
+                                </md-option>
+                            </md-optgroup>
+                        </md-select>
+                    </md-input-container>
+                </div>
+                <div >
+                    <md-input-container style="max-width: 150px; min-width: 150px" >
+                        <md-tooltip md-direction="\'right\'">{{filtro.selectedTipoOperacion}}</md-tooltip>
+                        <label>Operacion</label>
+                        <md-select ng-model="filtro.selectedTipoOperacion">
+                            <md-optgroup label="tipoOperacion">
+                                <md-option ng-value="0">
+                                    Ver todos
+                                </md-option>
+                                <md-option ng-value="tipoOperacion.descripcion" ng-repeat="tipoOperacion in filtroTiposOperacion">
+                                    {{tipoOperacion.descripcion}}
+                                </md-option>
+                            </md-optgroup>
+                        </md-select>
+                    </md-input-container>
+                </div>
+                <div  >
+                    <md-autocomplete flex="true"
+                                     md-input-name="autocompleteField"
+                                     md-selected-item="filtro.selectedCliente"
+                                     md-search-text="rqctrl.searchClientText"
+                                     md-items="cliente in rqctrl.querySearchClient(rqctrl.searchClientText)"
+                                     md-item-text="cliente.display"
+                                     md-min-length="0"
+                                     md-require-match="true"
+                                     md-floating-label="Cliente">
+                        <md-item-template>
+                            <span md-highlight-text="rqctrl.searchClientText">{{cliente.display}}</span>
+                        </md-item-template>
+                        <md-not-found>
+                            No se encuentran coincidencias.
+                        </md-not-found>
+                        <div ng-messages="searchForm.autocompleteField.$error"
+                             ng-if="searchForm.autocompleteField.$touched">
+                            <div ng-message="md-require-match">Cliente no válido</div>
+                            <div ng-message="minlength">Datos insuficientes</div>
+                        </div>
+                    </md-autocomplete>
+                </div>
+                <div   >
+                    <md-input-container>
+                        <label>Cant. de días</label>
+                        <input ng-model="filtro.verUltimos" type="number" step="1"
+                               required="true" ng-pattern="/^[0-9]*$/"
+                               style="max-width: 120px"/> <br/>
+                    </md-input-container>
+                </div>
+                <div  >
+                    <md-input-container>
+                        <md-tooltip md-direction="\'right\'">Al buscar por requerimiento los demás filtros no son considerados</md-tooltip>
+                        <label>N° Req.</label>
+                        <input ng-change="resetFilter('num_requerimiento')" ng-model="filtro.num_requerimiento" type="number" step="1"
+                               ng-pattern="/^[0-9]*$/"
+                               style="max-width: 120px"/> <br/>
+                    </md-input-container>
+                </div>
+                <div>
+                    <md-input-container>
+                        <md-tooltip md-direction="\'right\'">Al buscar por elemento los demás filtros no son considerados</md-tooltip>
+                        <label>Código elemento</label>
+                        <input ng-change="resetFilter('codigo_elemento')" ng-model="filtro.codigo_elemento" type="number"
+                               ng-pattern="/^[0-9]*$/"
+                               style="width: 140px"/> <br/>
+                    </md-input-container>
+                </div>
+                <div >
+                    <md-button class="md-raised md-primary" ng-click="filtrar()" ng-disabled="buttonSearchDisabled"> <span class="glyphicon glyphicon-search"></span> {{buttonSearchLabel}}</md-button>
+                </div>
+            </div>
+            <div class="layout-head-req-user">
+                <div style="float: right">
+                    <div style="text-align: right;margin-right: 10px;margin-top: 16px;margin-right: 10px;color: rgba(0,0,0,0.54);font-weight: 700">
+                        {{usuarioActual}}
+                    </div>
+                    <div>
+                        <md-button class="md-warn" href="/logout">Salir</md-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div layout-gt-sm="row">
+            <md-progress-linear md-mode="indeterminate" class="md-warn md-hue-1" ng-show="showProgress"></md-progress-linear>
+        </div>
+    </div>
+</form>
+
+</html>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="subReporteRemitoContenido" pageWidth="340" pageHeight="255" orientation="Landscape" columnWidth="340" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="2ba0d758-8b82-46a6-bfba-62483b599188">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="269"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="720"/>
+	<property name="com.jaspersoft.studio.unit." value="cm"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="sql150.xml"/>
+	<parameter name="parametroRemitoId" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[SELECT        remitosDetalle.remito_id, CONVERT(numeric, SUBSTRING(elementos.codigo, 3, 12)) AS etiqueta, ISNULL(CONVERT(nvarchar, referencia.numero1), '') + ' ' + ISNULL(referencia.texto1, '') + ' ' +
+ ISNULL(CONVERT(nvarchar, DATEPART("YYYY",referencia.fecha1)), '') AS despripcion
+FROM            remitosDetalle INNER JOIN
+                         elementos ON remitosDetalle.elemento_id = elementos.id LEFT OUTER JOIN
+                         referencia ON elementos.id = referencia.elemento_id
+WHERE        remitosDetalle.remito_id = $P{parametroRemitoId}
+ORDER BY elementos.codigo]]>
+	</queryString>
+	<field name="remito_id" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="remito_id"/>
+	</field>
+	<field name="etiqueta" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="etiqueta"/>
+	</field>
+	<field name="despripcion" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="despripcion"/>
+	</field>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="50" y="2" width="50" height="20" uuid="8999c91d-8e32-418e-a625-daacf4f7166c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bfae0546-1534-4e8d-91bd-868029bcbb88"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{etiqueta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="103" y="2" width="210" height="20" uuid="e8811704-be63-4c34-a958-f203feabf901">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="04ecb4b9-5e5e-405f-9832-4d7ad530f0a3"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{despripcion}]]></textFieldExpression>
+			</textField>
+			<ellipse>
+				<reportElement x="35" y="7" width="10" height="10" uuid="a5c12014-6252-47d6-b89c-47d80c09e6cd"/>
+			</ellipse>
+			<textField>
+				<reportElement x="11" y="2" width="23" height="20" uuid="1bb2e42d-b7ca-4c0c-98af-caed3d8316fa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="24">
+			<staticText>
+				<reportElement x="10" y="7" width="50" height="16" uuid="f4ec11be-64f1-4ac3-a570-d466513845df"/>
+				<textElement>
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cantidad : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="60" y="7" width="224" height="16" uuid="4951c0b5-f69a-43b3-836d-b719ffba6ec1"/>
+				<textElement>
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,61 @@
+<md-dialog aria-label="" style="width: 65vw;" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div ng-controller="mensajesCtrl">
+    <form ng-cloak="" >
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <div class="md-toolbar-tools-title"><h2>{{dialog.title}}</h2></div>
+                <div class="md-toolbar-tools-subtitle"><h3>{{dialog.subtitle}}</h3></div>
+                <!-- <h2>Mensajes</h2> -->
+                <span flex=""></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    <md-icon aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <alert type="{{alertType}}"
+               close="showAlert = false"
+               ng-show="showAlert"
+               ng-model="alertBox">{{alertMessage}}</alert>
+
+        <md-list-item class="secondary-button-padding" ng-repeat="item in mensajesList" ng-click="">
+            <div id="{{item.id}}" layout="row" layout-wrap=""  layout-sm="column" style="{{item.eliminado==true?'text-decoration:line-through':''}}">
+                    <div class="md-list-item-text">
+            <h5 mdLine="" >{{item.fechaCreacion}} De: {{item.usrOrigen.personasFisicas.nombreCompleto}} Para: {{item.usrDestino.personasFisicas.nombreCompleto}}</h5>
+            <p mdLine="" >{{item.texto}}</p>
+                    </div></div>
+            <md-button id="{{item.id}}" class="md-secondary" ng-click="delMensaje(item)" ng-show="{{!item.eliminado}}">X</md-button>
+            <md-divider></md-divider>
+        </md-list-item>
+
+
+        <md-dialog-actions layout="row">
+            <md-input-container flex="30" style="height: 58px;">
+                <label>Para: </label>
+                <md-select ng-model="selectedUsuario"
+                           ng-change=""
+                           required="true" >
+                    <md-optgroup label="usuario">
+                        <md-option ng-value="usuario.user_id" ng-repeat="usuario in usuarios">
+                            {{usuario.usuariosPlanta.personasFisicas.nombreCompleto}}
+                        </md-option>
+                    </md-optgroup>
+                </md-select>
+            </md-input-container>
+            <md-input-container flex="50">
+                <label>Nuevo Mensaje</label>
+                <input required="true" name="mensaje" ng-model="messageText" ng-paste="$event.preventDefault()"/>
+                <div ng-messages="projectForm.clientName.$error">
+                    <div ng-message="required">Requerido</div>
+                </div>
+            </md-input-container>
+            <span flex=""></span>
+            <md-button class="btn-danger" ng-click="agregarMensaje($event)">
+                Enviar
+            </md-button>
+            <md-button class="btn-info" ng-click="answer('cancelar')">
+                Cerrar
+            </md-button>
+        </md-dialog-actions>
+    </form>
+    </div>
+</md-dialog>

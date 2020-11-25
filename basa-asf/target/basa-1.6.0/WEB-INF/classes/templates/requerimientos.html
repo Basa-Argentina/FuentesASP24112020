@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <div sec:authorize="isAuthenticated()" ng-controller="AppCtrl as ctrl" ng-cloak="true">
+        <alert type="{{ctrl.alertType}}"
+               close="showAlert = false"
+               ng-show="showAlert"
+               ng-model="alertBox">{{ctrl.alertMessage}}</alert>
+        <div ng-include="filtroReq.url"></div>
+        <div layout-gt-sm="row" ui-i18n="es" ui-view="">
+            <md-button ng-show="showButtonHdR" ng-click="agregarHdR()" md-no-ink="true" class="button-hdr md-raised md-primary sample-show-hide">
+                Crear HdR
+            </md-button>
+            <div id="requerimientosGrid"
+                 class="grid"
+                 ng-context-menu="menuOptions"
+                 ui-grid="gridOptions"
+                 ui-grid-grouping="true"
+                 ui-grid-edit="false"
+                 ui-grid-selection="true"
+                 ui-grid-exporter="true"
+                 ui-grid-move-columns="true"
+                 ui-grid-save-state="true"
+                 ui-grid-resize-columns="true"
+                 ui-grid-auto-fit-columns="true"
+                 ui-grid-pagination="true">
+            </div>
+        </div>
+    </div>
+    <canvas id="barcodeTarget" width="150" height="150" ng-show="false"></canvas>
+    <canvas id="mapTarget" width="512" height="512" ng-show="false"></canvas>
+</html>
+
